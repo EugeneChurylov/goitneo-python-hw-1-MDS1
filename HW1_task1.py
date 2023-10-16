@@ -16,7 +16,7 @@ def get_birthdays_per_week(users):
     for user in users:
         name = user["name"]
         birthday = user["birthday"].date()
-        birthday_this_year = birthday.replace(year=2023)
+        birthday_this_year = birthday.replace(year=today.year)
         
         # Checkштп if the birthday has passed already this year
         if birthday_this_year <= today:
